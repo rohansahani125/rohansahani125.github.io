@@ -1,87 +1,57 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="widt
-
-h=device-width, initial-scale=1.0">
-
-<title>Simple Website</title>
-
-<link rel="stylesheet" href="styles.css
-
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('college.webp'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Change text color to contrast with the background */
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Background</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-<header>
-
-<h1>BHARATI VIDYAPEETH INSTITU TE OF MANAGEMENT KOLHAPUR</h1>
-
-<img src="logo.jpg" alt="Company L
-
-ogo">
-
-</header>
-
-<nav>
-
-<ul>
-
-<li><a href="#">Home</a></li>
-
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li
-
-95
-
->
-
-<li><a href="#">Contact</a></li>
-
-</ul>
-
-</nav>
-
-<main>
-
-<section>
-
-<h2><a href="bca.html">BCA (Ba chelor of Computer Applications)</a></h 2>
-
-<p>Learn about the exciting worl d of computer applications and program ming with our BCA program.</p>
-
-</section>
-
-<section>
-
-<h2><a href="bba.html">BBA (Ba chelor of Business Administration)</a>< /h2>
-
-<p>Explore the fundamentals of business management and leadership wit h our BBA program.</p>
-
-</section>
-<section>
-
-<h2><a href="mca.html">MCA (M aster of Computer Applications)</a></h2 >
-
-<p>Deepen your knowledge in co mputer science and software developme nt with our MCA program.</p>
-
-</section>
-
-<section>
-
-<h2><a href="mba.html">MBA (M aster of Business Administration)</a></ h2>
-
-<p>Develop advanced skills in bu siness strategy, finance, and leadership with our MBA program.</p>
-
-</section>
-
-</main>
-
+    <div class="overlay"></div>
+    <div class="content">
+        <img src="College logo.png" alt="Logo" class="logo">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#courses">Courses</a>
+                    <div class="dropdown-content">
+                        <a href="bca.html">BCA</a>
+                        <a href="bba.html">BBA</a>
+                        <a href="mca.html">MCA</a>
+                        <a href="mba.html">MBA</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>BHARATI VIDYAPEETH</h1>
+        <p>The institutions of Bharati Vidyapeeth (BV) was accorded deemed university status in 1996 for its academic excellence.</p>
+        <p> The Bharati Vidyapeeth (Deemed to be University)</p>
+    </div>
 </body>
 
+
 </html>
+
