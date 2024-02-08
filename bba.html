@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here if needed -->
     <style>
         /* CSS for watermark */
-        .watermark {
+         .watermark {
             position: fixed;
-            bottom: 50px; /* Adjust the distance from the bottom */
-            right: 400px; /* Adjust the distance from the right */
-            opacity: 0.15; /* Adjust the opacity of the watermark */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2; /* Adjust the opacity of the watermark */
             pointer-events: none;
+            width: 400px; /* Set the width of the watermark */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
