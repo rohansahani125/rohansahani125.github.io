@@ -1,50 +1,436 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the last value (0.3) to change the opacity of the overlay */
 }
+
+.content {
+    z-index: 1; /* Ensures content is above the overlay */
+    text-align: center;
+    position: relative; /* Added position:relative to contain the logo position */
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px; /* Set the width of the logo as per your design */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+/* ... Previous CSS code ... */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ... Rest of your styles ... */
+
+/* ... Previous CSS code ... */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.8); /* Background color with transparency (adjust the alpha value to set transparency) */
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent; /* Set the background of options to transparent */
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* ... Rest of your styles ... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body {
-    color: white;
-    background-color: purple;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
+nav {
+    background-color: #333;
+    color: green;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+#bca, #bba, #mca, #mba {
+    background-color:green;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#bca h2, #bba h2, #mca h2, #mba h2 {
+    color: #4CAF50;
+}
+
+
+header img {
+    display: block;
+    margin: 0 auto; /* This centers the image horizontally */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color:greenyellow;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+#bca-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: left;
+}
+
+#bca-image {
+    margin-right: 20px; /* Add some space between the image and text */
+}
+
+#bca-info {
+    max-width: 600px; /* Limit the width of the information for better readability */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: green;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+#bca-content {
+    display: flex;
     align-items: center;
 }
 
-.container h2 {
-    margin: 1rem 0;
+#bca-info {
+    max-width: 600px; /* Limit the width of the information for better readability */
 }
 
-.container img {
-    width: 5rem;
+#bca-image {
+    flex: 1;
+    text-align: right;
 }
 
-.timer-container {
-    margin-top: 2rem;
-    border: 1px solid white;
-    width: 100%;
-    padding: 2rem;
+
+#bba-content {
     display: flex;
+    align-items: center;
+}
+
+#bba-info {
+    max-width: 1000px; /* Limit the width of the information for better readability */
+}
+
+#bba-image {
+    flex: 1;
+    text-align: right;
+}
+/* Add this CSS to your styles.css file */
+
+#key-points {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#key-points h2 {
+    color: #4CAF50;
     text-align: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 30%;
-    overflow: hidden;
-    box-sizing: border-box;
 }
 
-.timer-container p {
-    margin: 0 0.9rem;
+#key-points ul {
+    list-style: none;
+    padding: 0;
 }
 
-.columns {
-    font-size: 2rem;
+#key-points ul li {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#key-points ul li:last-child {
+    margin-bottom: 0;
+}
+/* Add this CSS to your styles.css file */
+
+#eligibility-criteria {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#eligibility-criteria h2 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#eligibility-criteria ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#eligibility-criteria ul li {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#eligibility-criteria p {
+    margin-bottom: 10px;
+}
+
+#eligibility-criteria strong {
+    color: #4CAF50;
+}
+/* Add this CSS to your styles.css file */
+
+#skills-required {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills-required h2 {
+    color: #3498db;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#skills-required p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#skills-required ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills-required ul li {
+    color: #333;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#skills-required ul li:before {
+    content: '\2022'; /* Bullet point */
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+/* Add this CSS to your styles.css file */
+
+/* Style for paragraphs */
+p {
+    font-family: Arial, Helvetica, sans-serif; /* Choose your preferred font-family */
+    font-size: 16px;
+    line-height: 1.5; /* Adjust line spacing as needed */
+    color: #333; /* Text color */
+    margin-bottom: 15px;
+    text-align: left; /* Adjust text alignment as needed (e.g., left, center, right) */
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2 {
+    color: #333;
+}
+
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
